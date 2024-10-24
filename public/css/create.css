@@ -1,0 +1,125 @@
+/*external link CSS ng create view page*/
+/*default style, kasama padding and border's height and width*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana;
+    line-height: 1.5; /*space vertically*/
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto; /*ccenter yung container*/
+    padding: 20px;
+}
+
+/*style ng create note text*/
+h1 {
+    font-size: 2rem; /*responsive font size*/
+    background-color: #ffd23f;
+    border-radius: 8px;
+    color: #333;
+    display: inline-block; /*para magamit yung margin and padding*/
+    padding: 10px;
+}
+
+/*style placeholder*/
+input::placeholder,
+textarea::placeholder {
+    color: #333333b6;
+}
+
+/*style ng input title*/
+input[type="text"] {
+    width: 100%; /*width ng input title area*/
+    padding: 10px; /*padding sa loob ng input title*/
+    border: 1px solid #ffd23f;
+    border-radius: 4px 4px 0px 0px; /*rounded border corners*/
+    background-color: #ffd23f;
+    font-size: 2rem;
+    font-family: verdana;
+    color: #333;
+    margin-top: 10px;
+}
+
+/*style ng textarea content*/
+textarea[name="content"] {
+    width: 100%; /*width ng text area*/
+    padding: 10px; /*padding sa loob ng text input*/
+    border: 1px solid #ffd23f;
+    border-radius: 0px 0px 4px 4px; /*rounded border corners*/
+    background-color: ghostwhite;
+    font-size: 1rem;
+    font-family: verdana;
+    margin-bottom: 10px;
+}
+
+/*button style ng save*/
+button {
+    background-color: #28a745;
+    color: white; /*color ng save text*/
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /*cursor nya ay pointer*/
+    font-size: 1rem;
+    font-family: verdana;
+    transition: background-color 0.3s; /*transition ng hover*/
+}
+
+/*hover effect ng save button*/
+button:hover {
+    background-color: #218838; /*darker green pag hinover*/
+}
+
+/*button style ng cancel*/
+.btn-secondary {
+    background-color: #890000;
+    color: white;
+    padding: 5px 20px; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: verdana;
+    margin-left: 10px;
+    text-decoration: none; /*para maremove yung default decoration like underline*/
+}
+
+/*hover effect ng cancel button*/
+.btn-secondary:hover {
+    background-color: #6e0000; /*darker red pag natapat sa button*/
+}
+
+/*media queries based sa device size*/
+
+/*mobile*/
+@media (max-width: 768px) {
+    body {
+        line-height: 1.6;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    input[type="text"],
+    textarea[name="content"],
+    button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+    input[type="text"],
+    textarea[name="content"],
+    button,
+    .btn-secondary {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
